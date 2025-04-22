@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
     letter-spacing: 1px;
 }
@@ -15,9 +14,28 @@ html {
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: rgb(38, 82, 99);
     min-height: 100vh;
 }
+
+h1 {
+    text-align: center;
+    color: black;
+    padding: 40px;
+}
+
+p,
+.enumeration {
+    padding-left: 60px;
+    padding-right: 40px;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.enumeration {
+    padding-left: 100px;
+}
+
 
 
 /* Image d'accueil en fond */
@@ -40,7 +58,8 @@ body {
 .menu-latéral {
     position: fixed;
     top: 0;
-    left: -220px; /* largeur totale - poignée visible */
+    left: -220px;
+    /* largeur totale - poignée visible */
     width: 260px;
     height: 100%;
     background-color: #2e4a56;
@@ -50,6 +69,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.menu-latéral ul {
+    list-style: none;
 }
 
 .menu-latéral.active {
@@ -95,4 +118,3 @@ body {
     background-color: #4d6d7d;
     border-radius: 8px;
 }
-
