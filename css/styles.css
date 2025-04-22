@@ -1,30 +1,26 @@
+/* Reset + base */
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
     letter-spacing: 1px;
 }
 
-
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
-
 body {
-    font-family: 'Quicksand';
-    background-color: rgb(38 82 99);
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(38, 82, 99);
     min-height: 100vh;
 }
 
 
-/* ==============================
-   /* Style pour la page d'accueil index.html 
-   ============================== */
-
+/* Image d'accueil en fond */
 .image-fond {
     position: absolute;
     top: 0;
@@ -39,3 +35,64 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+
+.menu-latéral {
+    position: fixed;
+    top: 0;
+    left: -220px; /* largeur totale - poignée visible */
+    width: 260px;
+    height: 100%;
+    background-color: #2e4a56;
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-latéral.active {
+    left: 0;
+}
+
+/* Poignée du menu (toujours visible) */
+.taq {
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    background-color: #2e4a56;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 22px;
+}
+
+/* Liste du menu */
+.menu-latéral ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-latéral li a {
+    color: white;
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.menu-latéral li a:hover {
+    background-color: #4d6d7d;
+    border-radius: 8px;
+}
+

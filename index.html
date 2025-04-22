@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-
-<!-- Page principale du site donnant les bases de la conjecture de Syracuse -->
-
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide de survie pour dysgraphique</title>
     <link rel="shortcut icon" href="assets/icones/icon.png" type="image/x-icon">
-    <!-- Deux polices utilisées dans le site : 'Barlow' ; 'Quicksand' -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -18,11 +13,23 @@
     <header>
         <section class="accueil">
             <div class="image-fond">
-                <img src="assets/accueil/accueil.png">
+                <img src="assets/accueil/accueil.png" alt="Image de fond">
             </div>
         </section>
-    </header>        
-    
-</body>
 
+            <!-- Menu latéral avec poignée visible -->
+            <nav class="menu-latéral" id="menu-latéral">
+                <div class="taq" id="taq">&#9776;</div>
+                <ul>
+                    <li><a href="#section1">1</a></li>
+                    <li><a href="#section2">2</a></li>
+                    <li><a href="#section3">3</a></li>
+                    <li><a href="#section4">4</a></li>
+                    <li><a href="#section5">5</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <script src="js/app.js"></script>
+</body>
 </html>
