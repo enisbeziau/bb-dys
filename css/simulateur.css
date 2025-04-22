@@ -1,0 +1,144 @@
+/* 
+Auteur : Enis Béziau
+Cette page réunit le code de style la page simulateur.css
+*/
+
+
+body {
+    font-family: 'Barlow';
+}
+
+.zone-input {
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    margin: 10px 0 10px 0;
+}
+
+#input {
+    background: rgba(255, 255, 255, .3);
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+#btn {
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 11%;
+    right: 10px;
+    font-size: 20px;
+    padding: 3px 3px 3px 5px;
+}
+
+::placeholder {
+    color: whitesmoke;
+}
+
+#graphique {
+    margin-top: 25px;
+    min-height: 80vh;
+    min-width: 100%;
+}
+
+/* Par défaut, la zone est cachée. Celle-ci est rendue visible grâce à du js */
+.zone-graphique {
+    display: none;
+    background-color: whitesmoke;
+    margin: 0px 70px 50px 75px;
+    border-radius: 20px;
+}
+
+
+/* Style des boutons pour changer le repère du graphique*/
+
+.ensemble-btn {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.ensemble-btn button {
+    border: none;
+    cursor: pointer;
+    padding: 7px 13px;
+    width: 50%;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Style pour le dernier bouton */
+.ensemble-btn button:last-child {
+    margin-left: 5px;
+}
+
+.ensemble-btn button:hover {
+    background-color: #2980b9;
+}
+
+/* Caché par défaut et activé en mm temps que la zone graphique */
+#ensemble-btn {
+    display: none;
+}
+
+
+/* ==============================
+   Partie informations
+   ============================== */
+
+/* 
+La section informations est pas défaut cachée tant que l'utilisateur n'a rien entré 
+Lorsque l'entrée est validée et le graphique générée, le display est changé dans le js
+ */
+#informations {
+    display: none;
+    width: 80%;
+    max-width: 400px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#informations p {
+    margin-bottom: 10px;
+}
+
+#altitude-max,
+#facteur-expansion,
+#nbr-iteration {
+    color: #4CAF50;
+}
+
+#csv {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#csv img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Désactive les marges quand l'écran est trop petit pour qu'on voit mieux le graphique */
+@media screen and (max-width: 800px) {
+    .zone-graphique {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .titre {
+        font-size: 28px;
+    }
+}

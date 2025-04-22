@@ -1,0 +1,241 @@
+/* 
+Auteur : Enis Béziau 1H
+Ce fichier contient le code stylisant les parties redondantes (navbar ; footer) et la page index.html
+*/
+
+
+/* ==============================
+   Code des élements redondants sur l'ensemble des pages (navbar, footer, reset)
+   ============================== */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+body {
+    font-family: 'Quicksand';
+    background-color: rgb(38 82 99);
+    min-height: 100vh;
+}
+
+
+/* Code de la barre de navigation */
+
+nav {
+    /* Barlow est la police utilisée pour les titres h1 des pages et la navbar */
+    font-family: 'Barlow', 'sans-serif';
+    padding: 20px;
+}
+
+.ensemble-lien {
+    text-align: right;
+    font-size: large;
+}
+
+.ensemble-lien li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.ensemble-lien li a {
+    color: whitesmoke;
+    border-radius: 15px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.ensemble-lien li a:hover {
+    background-color: whitesmoke;
+    color: #000;
+}
+
+
+/* Style du pied de page */
+
+footer {
+    font-weight: bold;
+    border-top: 1px solid whitesmoke;
+    background-color: rgb(38 82 99);
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: whitesmoke;
+}
+
+.contenu-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reseau {
+    display: flex;
+}
+
+.reseau li {
+    margin-right: 10px;
+}
+
+.reseau a {
+    color: whitesmoke;
+}
+
+.reseau a:hover {
+    text-decoration: underline;
+}
+
+
+.titre {
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+
+/* ==============================
+   /* Style pour la page d'accueil index.html 
+   ============================== */
+
+.image-fond {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.image-fond img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.accueil {
+    font-family: 'Barlow', 'sans-serif';
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenu-accueil {
+    text-align: center;
+    background-color: rgb(0 0 0 / 41%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contenu-accueil h1 {
+    font-weight: normal;
+    color: whitesmoke;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#decouvrir {
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(38, 74, 87);
+    border-radius: 4px;
+    width: 141px;
+    height: 41px;
+    color: whitesmoke;
+    line-height: 41px;
+
+}
+
+#decouvrir:hover {
+    background-color: rgba(56, 82, 92, 0.994);
+}
+
+#link {
+    font-family: 'Barlow', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* Code servant à la gestion de l'anim quand on scroll sur la page */
+
+.presentation.index {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.presentation.index.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ==============================
+   Partie responsive design
+   ============================== */
+
+.hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    display: none;
+}
+
+@media screen and (max-width: 633px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    html.no-scroll {
+        overflow: hidden;
+    }
+
+    .hamburger {
+        z-index: 100;
+        display: block;
+    }
+
+    .ensemble-lien {
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+        z-index: 100;
+    }
+
+    .ensemble-lien li {
+        margin: 10px;
+        font-size: 1.3em;
+    }
+
+    .ensemble-lien.menu-mobile {
+        align-items: center;
+        margin-left: 0;
+        display: flex;
+        background-color: #136a86;
+        transition: all 0.5s ease;
+    }
+
+}

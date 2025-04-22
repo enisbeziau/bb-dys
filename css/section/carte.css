@@ -1,0 +1,98 @@
+/* 
+Style des « cartes », les sections blanches composées de texte ou d'image et de texte 
+Cet aspect de carte est réutilisé dans toutes les pages sauf accueil.html
+*/
+
+.carte {
+    font-family: 'Quicksand';
+    background: whitesmoke;
+    margin: 0 70px 50px 75px;
+    border-radius: 20px;
+}
+
+.carte h2 {
+    padding: 12px;
+    text-decoration: underline;
+}
+
+
+.contenu-carte {
+    display: flex;
+}
+
+.texte,
+.image {
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+}
+
+.texte p,
+.carte p {
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.image {
+    border-left: 1px solid black;
+}
+
+.image img {
+    border-radius: 4px;
+    width: 98%;
+}
+
+.image figcaption a {
+    color: black;
+}
+
+.carte p a {
+    color: black;
+}
+
+.carte p a:hover {
+    text-decoration: underline;
+}
+
+.liste {
+    padding-left: 40px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.liste li {
+    list-style-type: disc;
+    margin: 20px;
+}
+
+code {
+    color: black;
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+}
+
+/* Style des rendus visuels LaTex grâce à MathJax. La couleur sert à mieux intégrer l'expression mathématique avec la police Quicksand */
+.MathJax.CtxtMenu_Attached_0 {
+    color: rgb(85, 85, 85);
+}
+
+@media screen and (max-width: 950px) {
+
+    .carte {
+        margin: 20px 0 0 0;
+    }
+
+    .image {
+        padding-top: 5px;
+        border-left: 0px;
+        border-top: 1px solid black;
+    }
+
+    .contenu-carte {
+        display: block;
+        padding: 0px;
+    }
+}
