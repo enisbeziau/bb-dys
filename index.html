@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide de survie pour dysgraphique</title>
     <link rel="shortcut icon" href="assets/icones/icon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- temp -->
+    <style>
+        html {
+            overflow-y: hidden;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <section class="accueil">
+        <nav class="menu-latéral" id="menu-latéral">
+            <div class="accueil">
+                <a href="index.html">Accueil</a>
+            </div>
+            <div class="taq" id="taq">&#9776;</div>
+            <ul>
+                <li><a href="src/def.html">1. Qu'est ce que la disgraphie ?</a></li>
+                <li><a href="src/sciences.html">2. Utiliser son PC en sciences</a></li>
+                <li><a href="#section3">3</a></li>
+                <li><a href="#section4">4</a></li>
+                <li><a href="#section5">5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
             <div class="image-fond">
                 <img src="assets/accueil/accueil.png" alt="Image de fond">
             </div>
         </section>
-
-            <nav class="menu-latéral" id="menu-latéral">
-                <div class="taq" id="taq">&#9776;</div>
-                <ul>
-                    <li><a href="src/def.html">1. Qu'est ce que la disgraphie ?</a></li>
-                    <li><a href="#section2">2</a></li>
-                    <li><a href="#section3">3</a></li>
-                    <li><a href="#section4">4</a></li>
-                    <li><a href="#section5">5</a></li>
-                </ul>
-            </nav>
-    </header>
-
-    <script src="js/app.js"></script>
+        <script src="js/app.js"></script>
+    </main>
 </body>
+
 </html>
