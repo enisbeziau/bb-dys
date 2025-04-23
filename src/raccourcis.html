@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide de survie pour dysgraphique</title>
+    <link rel="shortcut icon" href="assets/icones/icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Importation de la bibliothèque MathJax qui permet d'écrire des équations plus proprement grâce à LaTex -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="menu-latéral" id="menu-latéral">
+            <div class="accueil">
+                <a href="../index.html">Accueil</a>
+            </div>
+            <div class="taq" id="taq">&#9776;</div>
+            <ul>
+                <li><a href="def.html">1. Qu'est ce que la disgraphie ?</a></li>
+                <li><a href="sciences.html">2. Utiliser son PC en sciences</a></li>
+                <li><a href="raccourcis.html">3. Liste des raccourcis</a></li>
+                <li><a href="#section4">4</a></li>
+                <li><a href="#section5">5</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="titre">
+            <h1>Liste des raccourcis</h1>
+        </div>
+
+        <p>Ouvrir une zone d’équation : Alt+ <br>
+            Texte à l’intérieur de la zone d’équation (pour passer de l’italique au droit) : Ctrl I <br>
+            Chaque formule doit être tapée puis suivie d’un espace afin de la valider</p>
+
+        <p><span class="gras">I. &emsp;Bases</span></p>
+        <p>La touche « ^ » sert aux exposants et la touche « _ » aux indices.</p>
+        <p>Pour mettre des groupes (>1 caractère) en indice / exposant, on utilise des parenthèses.</p>
+        <div class="tableau-raccourcis">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Formule</th>
+                        <th>Rendu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>x^n</td>
+                        <td>\(x^n\)</td>
+                    </tr>
+                    <tr>
+                        <td>x_n</td>
+                        <td>\(x_n\)</td>
+                    </tr>
+                    <tr>
+                        <td>x_n^2</td>
+                        <td>\(x_n^2\)</td>
+                    </tr>
+                    <tr>
+                        <td>x^(n+1)</td>
+                        <td>\(x^{n+1}\)</td>
+                    </tr>
+                    <tr>
+                        <td>(u_(n+1))^(x+2)</td>
+                        <td>\((u_{n+1})^{x+2}\)</td>
+                    </tr>
+                    <tr>
+                        <td>(_43^98)Tc</td>
+                        <td>\({_{43}^{98}}Tc\)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p><span class="gras">II. &emsp; Opérations</span></p>
+        <div class="tableau-raccourcis">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Formule</th>
+                        <th>Rendu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>a\times b</td>
+                        <td>\(a\times b\)</td>
+                    </tr>
+                    <tr>
+                        <td>a\cdot b</td>
+                        <td>\(a \cdot b\)</td>
+                    </tr>
+                    <tr>
+                        <td>a \div b</td>
+                        <td>\(a \div b\)</td>
+                    </tr>
+                    <tr>
+                        <td>a/b</td>
+                        <td>\(\dfrac a b\)</td>
+                    </tr>
+                    <tr>
+                        <td>(a+b)/(c+d)</td>
+                        <td>\(\dfrac{a+b}{c+d}\)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p><span class="gras">III. &emsp; Police d'écriture</span></p>
+        <div class="tableau-raccourcis">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Police</th>
+                        <th>Formule générale</th>
+                        <th>Exemples</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Grecques</td>
+                        <td>\nom_de_la_lettre </td>
+                        <td>
+                            \(\text{\pi}\to \pi\) 
+                            <br>
+                            \(\text{\epsilon}\to \varepsilon\)
+                            <br>
+                            \(\text{\lambda}\to\lambda\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Arrondie</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Gothique</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Ensemble</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <script src="../js/app.js"></script>
+</body>
+
+</html>
