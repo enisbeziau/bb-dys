@@ -9,9 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Quicksand:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <!-- Importation de la bibliothèque MathJax qui permet d'écrire des équations plus proprement grâce à LaTex -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 
 <body>
@@ -125,9 +123,9 @@
                 <tbody>
                     <tr>
                         <td>Grecques</td>
-                        <td>\nom_de_la_lettre </td>
+                        <td>\&#60;nom de la lettre &#62; &#60;sp&#62;</td>
                         <td>
-                            \(\text{\pi}\to \pi\) 
+                            \(\text{\pi}\to \pi\)
                             <br>
                             \(\text{\epsilon}\to \varepsilon\)
                             <br>
@@ -136,18 +134,195 @@
                     </tr>
                     <tr>
                         <td>Arrondie</td>
-                        <td></td>
-                        <td></td>
+                        <td>\script&#60;lettre&#62; &#60;sp&#62;</td>
+                        <td>
+                            \(\text{\scriptA}\to \mathcal A\)
+                            <br>
+                            \(\text{scriptC}\to \mathcal C\)
+                            <br>
+                            \(\text{\scriptD_f}\to \mathcal D_f\)
+                        </td>
                     </tr>
                     <tr>
                         <td>Gothique</td>
-                        <td></td>
-                        <td></td>
+                        <td>\fraktur&#60;lettre&#62; &#60;sp&#62;</td>
+                        <td>
+                            \(\text{\frakturI}\to \Im\)
+                            <br>
+                            \(\text{\frakturR}\to \Re\)
+                            <br>
+                            \(\text{\frakture}\to \mathfrak e\)
+                        </td>
                     </tr>
                     <tr>
                         <td>Ensemble</td>
-                        <td></td>
-                        <td></td>
+                        <td>\double&#60;;ettre&#62; &#60;sp&#62;</td>
+                        <td>
+                            \(\text{\doubleR}\to \mathbb R\)
+                            <br>
+                            \(\text{\doubleC}\to \mathbb C\)
+                            <br>
+                            \(\text{\doubleP}\to \mathbb P\)
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Pour gagner du temps, on a : </p>
+        <ul class="enumeration">
+            <li>\(\text{\r}\to \mathbb R\) (ainsi \(\text{\r_+^*}\to \mathbb R_+^*\) par exemple)</li>
+            <li>\(\text{\n}\to \mathbb N\) (ainsi \(\text{\n\pv 4}\to \mathbb N\setminus \{4\}\) par exemple) <br><br>
+            </li>
+        </ul>
+
+        <p><span class="gras">IV.&emsp; Intervalles</span></p>
+        <div class="tableau-raccourcis">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Formule</th>
+                        <th>Rendu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>[0 ; 3/4]</td>
+                        <td>\(\left[0\; ;\dfrac 3 4 \right]\)</td>
+                    </tr>
+                    <tr>
+                        <td>\ee 0 ; 3/4</td>
+                        <td>\(\left]0\; ;\dfrac{3}{4}\right[\)</td>
+                    </tr>
+                    <tr>
+                        <td>\ei 0 ; 3/4</td>
+                        <td>\(\left]0\; ;\dfrac{3}{4}\right]\)</td>
+                    </tr>
+
+                    <tr>
+                        <td>\ie 0 ; 3/4</td>
+                        <td>\(\left[0\; ; \dfrac 3 4 \right[\)</td>
+                    </tr>
+                    <tr>
+                        <td>\entier 0 ; n</td>
+                        <td>\([\![3\; ;n]\!]\)</td>
+                    </tr>
+                    <tr>
+                        <td>\entiero 0 ; +\infty</td>
+                        <td>\([\![3\; ;+\infty[\![\)</td><br>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p><span class="gras">V. &emsp; Symboles</span></p>
+        <div class="tableau-raccourcis">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Formule</th>
+                        <th>Rendu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>\approx</td>
+                        <td>\(\approx\)</td>
+                    </tr>
+                    <tr>
+                        <td>\equiv</td>
+                        <td>\(\equiv \)</td>
+                    </tr>
+                    <tr>
+                        <td>\ne</td>
+                        <td>\(\ne\)</td>
+                    </tr>
+                    <tr>
+                        <td>\sup</td>
+                        <td>\(>\)</td>
+                    </tr>
+                    <tr>
+                        <td>\supe</td>
+                        <td>\(\geqslant\)</td>
+                    </tr>
+                    <tr>
+                        <td>\inf</td>
+                        <td>\(&#60;\)</td>
+                    </tr>
+                    <tr>
+                        <td>\infe</td>
+                        <td>\(\leqslant\)</td>
+                    </tr>
+                    <tr>
+                        <td>>></td>
+                        <td>\(\gg\)</td>
+                    </tr>
+                    <tr>
+                        <td>&#60; &#60;</td>
+                        <td>\(\ll\)</td>
+                    </tr>
+                    <tr>
+                        <td>\emptyset</td>
+                        <td>\(\emptyset\)</td>
+                    </tr>
+                    <tr>
+                        <td>\cap</td>
+                        <td>\(\cap\)</td>
+                    </tr>
+                    <tr>
+                        <td>\cup</td>
+                        <td>\(\cup\)</td>
+                    </tr>
+                    <tr>
+                        <td>\in</td>
+                        <td>\(\in\)</td>
+                    </tr>
+                    <tr>
+                        <td>\notin</td>
+                        <td>\(\notin\)</td>
+                    </tr>
+                    <tr>
+                        <td>\subset</td>
+                        <td>\(\subset\)</td>
+                    </tr>
+                    <tr>
+                        <td>\subseteq</td>
+                        <td>\(\subseteq\)</td>
+                    </tr>
+                    <tr>
+                        <td>\sim</td>
+                        <td>\(\sim\)</td>
+                    </tr>
+                    <tr>
+                        <td>\forall ou \fa</td>
+                        <td>\(\forall \)</td>
+                    </tr>
+                    <tr>
+                        <td>\exists ou \ex</td>
+                        <td>\exists</td>
+                    </tr>
+                    <tr>
+                        <td>\vee</td>
+                        <td>\(\vee\)</td>
+                    </tr>
+                    <tr>
+                        <td>\wedge</td>
+                        <td>\(\wedge\)</td>
+                    </tr>
+                    <tr>
+                        <td>\infty</td>
+                        <td>\(\infty\)</td>
+                    </tr>
+                    <tr>
+                        <td>\pm </td>
+                        <td>\(\pm\)</td>
+                    </tr>
+                    <tr>
+                        <td>\mp</td>
+                        <td>\(\mp\)</td>
+                    </tr>
+                    <tr>
+                        <td>\forall x\in\r_+, x^2\supe 0</td>
+                        <td>\(\forall x\in \mathbb R_+^*, x^2\geqslant 0\)</td>
                     </tr>
                 </tbody>
             </table>
@@ -155,6 +330,9 @@
 
 
         <script src="../js/app.js"></script>
+        <!-- Importation de la bibliothèque MathJax qui permet d'écrire des équations plus proprement grâce à LaTex -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 
 </html>
